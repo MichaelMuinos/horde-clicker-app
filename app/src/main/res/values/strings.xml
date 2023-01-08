@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Horde Clicker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_upgrade_view">upgrade_view</string>
+    <string name="title_activity_item_view">item_view</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_achievement_list_view">achievement_list_view</string>
+    <string name="title_activity_stat_view">stat_view</string>
+    <string name="title_activity_start">start</string>
+    <string name="title_activity_credits">Credits</string>
+</resources>

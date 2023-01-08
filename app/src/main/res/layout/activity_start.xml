@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.justplaingoatapps.clicker.Start"
+    android:background="@drawable/blackscratch">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/startButtonId"
+        android:background="@null"
+        android:src="@drawable/start"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/creditsButtonId"
+        android:layout_alignStart="@+id/creditsButtonId" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:id="@+id/creditsButtonId"
+        android:background="@null"
+        android:src="@drawable/credits"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/startButtonId"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetButtonId"
+        android:background="@null"
+        android:src="@drawable/reset"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/creditsButtonId"
+        android:layout_alignLeft="@+id/creditsButtonId"
+        android:layout_alignStart="@+id/creditsButtonId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logonew"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp" />
+
+</RelativeLayout>

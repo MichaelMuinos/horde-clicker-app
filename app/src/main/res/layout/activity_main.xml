@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/practice"
+    android:id="@+id/containerId"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/earthPictureId"
+        android:src="@drawable/earthgood"
+        android:background="@null"
+        android:soundEffectsEnabled="false"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/earthPicture2Id"
+        android:src="@drawable/bigearthgood"
+        android:background="@null"
+        android:soundEffectsEnabled="false"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clickTextViewId"
+        android:text="count"
+        android:textSize="30dp"
+        android:textColor="#ff3800"
+        android:layout_above="@+id/zombieTitleId"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ZOMBIES"
+        android:textSize="30dp"
+        android:id="@+id/zombieTitleId"
+        android:textColor="#ff3800"
+        android:layout_above="@+id/countPerClickId"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zps"
+        android:textSize="17dp"
+        android:id="@+id/zpsId"
+        android:textColor="#000000"
+        android:layout_above="@+id/earthPictureId"
+        android:layout_alignLeft="@+id/zombieTitleId"
+        android:layout_alignStart="@+id/zombieTitleId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click"
+        android:textSize="17dp"
+        android:id="@+id/countPerClickId"
+        android:textColor="#000000"
+        android:layout_above="@+id/zpsId"
+        android:layout_alignLeft="@+id/zpsId"
+        android:layout_alignStart="@+id/zpsId" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:soundEffectsEnabled="true"
+            android:id="@+id/achievementButton"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/trophy" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/upgradeButton"
+            android:src="@drawable/hand"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/statButton"
+            android:src="@drawable/brain"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodDropImageId"
+        android:src="@drawable/blooddrop"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/zpsId"
+        android:layout_toEndOf="@+id/zpsId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodDropImageTwoId"
+        android:src="@drawable/blooddrop32"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/zombieTitleId"
+        android:layout_alignStart="@+id/zombieTitleId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodDropImageThreeId"
+        android:src="@drawable/blooddrop"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/earthPictureId"
+        android:layout_toStartOf="@+id/earthPictureId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodDropImageFourId"
+        android:src="@drawable/blooddrop32"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/earthPictureId"
+        android:layout_alignEnd="@+id/earthPictureId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodDropImageFiveId"
+        android:src="@drawable/blooddrop32"
+        android:longClickable="false"
+        android:layout_alignBottom="@+id/backButtonId"
+        android:layout_toLeftOf="@+id/bloodDropImageId"
+        android:layout_toStartOf="@+id/bloodDropImageId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodDropImageSixId"
+        android:src="@drawable/blooddrop"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButtonId"
+        android:background="@null"
+        android:src="@drawable/back"
+        android:layout_marginLeft="3dp"
+        android:layout_alignTop="@+id/hordeBlood11Id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popId"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop2Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop3Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop4Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop5Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop6Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop7Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop8Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop9Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop10Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop11Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop12Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop13Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop14Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop15Id"
+        android:layout_alignTop="@+id/earthPictureId"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/gangup2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop16Id"
+        android:visibility="invisible"
+        android:src="@drawable/gangup"
+        android:layout_alignTop="@+id/pop17Id"
+        android:layout_alignLeft="@+id/zombieTitleId"
+        android:layout_alignStart="@+id/zombieTitleId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop17Id"
+        android:visibility="invisible"
+        android:src="@drawable/gangup3"
+        android:layout_alignTop="@+id/pop18Id"
+        android:layout_alignLeft="@+id/zpsId"
+        android:layout_alignStart="@+id/zpsId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pop18Id"
+        android:visibility="invisible"
+        android:src="@drawable/gangup2"
+        android:layout_alignTop="@+id/popId"
+        android:layout_alignLeft="@+id/popId"
+        android:layout_alignStart="@+id/popId"
+        android:layout_marginTop="34dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundButtonId"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/notmute" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eye2Id"
+        android:src="@drawable/eye"
+        android:background="@null"
+        android:layout_alignBottom="@+id/earthPicture2Id"
+        android:layout_alignLeft="@+id/bloodDropImageFourId"
+        android:layout_alignStart="@+id/bloodDropImageFourId"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eyeId"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/backButtonId"
+        android:layout_toEndOf="@+id/backButtonId"
+        android:src="@drawable/eye"
+        android:background="@null"
+        android:layout_above="@+id/zombieTitleId" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eye5Id"
+        android:src="@drawable/eye"
+        android:background="@null"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/earthPicture2Id"
+        android:layout_alignLeft="@+id/eyeId"
+        android:layout_alignStart="@+id/eyeId" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eye3Id"
+        android:src="@drawable/eye"
+        android:background="@null"
+        android:visibility="invisible"
+        android:layout_above="@+id/zombieTitleId"
+        android:layout_alignRight="@+id/bloodDropImageSixId"
+        android:layout_alignEnd="@+id/bloodDropImageSixId" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eye4Id"
+        android:src="@drawable/eye"
+        android:visibility="invisible"
+        android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/popId"
+        android:layout_toEndOf="@+id/popId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBloodId"
+        android:src="@drawable/hordeblood"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/eye5Id"
+        android:layout_toStartOf="@+id/eye5Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood2Id"
+        android:src="@drawable/hordeblood"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/eye5Id"
+        android:layout_toStartOf="@+id/eye5Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood3Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/eye5Id"
+        android:layout_toStartOf="@+id/eye5Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood4Id"
+        android:src="@drawable/hordeblood"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/eye5Id"
+        android:layout_toStartOf="@+id/eye5Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood5Id"
+        android:src="@drawable/hordeblood"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/eye5Id"
+        android:layout_toStartOf="@+id/eye5Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood6Id"
+        android:src="@drawable/hordeblood"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/hordeBlood9Id"
+        android:layout_toEndOf="@+id/hordeBlood9Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood7Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/hordeBlood8Id"
+        android:layout_alignRight="@+id/eyeId"
+        android:layout_alignEnd="@+id/eyeId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood8Id"
+        android:src="@drawable/hordeblood"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/hordeBlood10Id"
+        android:layout_toLeftOf="@+id/hordeBlood10Id"
+        android:layout_toStartOf="@+id/hordeBlood10Id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood9Id"
+        android:src="@drawable/hordeblood"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/hordeBlood10Id"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood10Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/backButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageTwoId"
+        android:layout_toEndOf="@+id/bloodDropImageTwoId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood11Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood12Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood13Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood14Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood15Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood16Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood17Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood18Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood19Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood20Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood21Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood22Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood23Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood24Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeBlood25Id"
+        android:visibility="invisible"
+        android:src="@drawable/hordeblood"
+        android:layout_alignTop="@+id/soundButtonId"
+        android:layout_toRightOf="@+id/bloodDropImageFourId"
+        android:layout_toEndOf="@+id/bloodDropImageFourId" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hordeMessageId"
+        android:src="@drawable/hordemessage"
+        android:visibility="invisible"
+        android:layout_below="@+id/bloodDropImageTwoId"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/transparentEyeId"
+        android:layout_alignParentLeft="true"
+        android:alpha=".45"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/transparenteye"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="tip"
+        android:id="@+id/tipId"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#66CD00"
+        android:layout_above="@+id/clickTextViewId"
+        android:layout_alignTop="@+id/tip2Id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="tip"
+        android:id="@+id/tip2Id"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#66CD00"
+        android:layout_above="@+id/clickTextViewId"
+        android:layout_alignTop="@+id/tip3Id"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="tip"
+        android:id="@+id/tip3Id"
+        android:visibility="invisible"
+        android:layout_above="@+id/clickTextViewId"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#66CD00"
+        android:layout_alignTop="@+id/tip4Id"
+        android:layout_alignLeft="@+id/tip4Id"
+        android:layout_alignStart="@+id/tip4Id" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clickTextViewId"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="tip"
+        android:id="@+id/tip4Id"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#66CD00"
+        android:layout_alignTop="@+id/tip5Id"
+        android:layout_alignLeft="@+id/tip5Id"
+        android:layout_alignStart="@+id/tip5Id" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="tip"
+        android:id="@+id/tip5Id"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#66CD00"
+        android:layout_alignBottom="@+id/hordeMessageId"
+        android:layout_alignLeft="@+id/backButtonId"
+        android:layout_alignStart="@+id/backButtonId" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clickTextViewId"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="tip"
+        android:id="@+id/tip6Id"
+        android:visibility="invisible"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#66CD00"
+        android:layout_alignTop="@+id/tip5Id"
+        android:layout_alignLeft="@+id/tip5Id"
+        android:layout_alignStart="@+id/tip5Id" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#cccccc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All data will be lost."
+        android:textSize="22dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/questionId"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yesButtonId"
+        android:background="@null"
+        android:src="@drawable/yes"
+        android:layout_alignTop="@+id/noButtonId"
+        android:layout_alignLeft="@+id/questionId"
+        android:layout_alignStart="@+id/questionId" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noButtonId"
+        android:background="@null"
+        android:src="@drawable/no"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/questionId"
+        android:layout_alignRight="@+id/questionId"
+        android:layout_alignEnd="@+id/questionId" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Are you sure?"
+        android:id="@+id/question2Id"
+        android:textSize="22dp"
+        android:layout_below="@+id/questionId"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
